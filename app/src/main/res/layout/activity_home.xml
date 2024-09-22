@@ -43,7 +43,7 @@ android:layout_height="match_parent">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="?attr/colorPrimary">
+        android:background="@color/navyblue">
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab_home"
@@ -64,10 +64,10 @@ android:layout_height="match_parent">
             android:text="About Us" />
     </com.google.android.material.tabs.TabLayout>
 
-    <androidx.viewpager.widget.ViewPager
+    <androidx.viewpager2.widget.ViewPager2
     android:id="@+id/view_pager"
     android:layout_width="match_parent"
-    android:layout_height="0dp"
+    android:layout_height="match_parent"
     android:layout_above="@id/tab_layout"
     android:layout_below="@id/app_logo"
     tools:ignore="NotSibling" />

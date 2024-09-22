@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to PatientPal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="32dp"
+        android:textColor="@color/purple"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/welcomesubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="find your care"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:textColor="@color/black"/>
+
+    <!-- Illustration Image (optional) -->
+    <ImageView
+        android:id="@+id/welcomeImage"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@drawable/welcome"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="18sp"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/alreadyAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Sign in"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"/>
+
+    <!-- Sign In Button -->
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="18sp"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"/>
+
+    <!-- Already have an account? -->
+
+
+    <!-- Or connect using -->
+    <TextView
+        android:id="@+id/orConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or connect using"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"/>
+
+    <!-- Social Media Login Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Facebook Button -->
+
+        <!-- Google Button -->
+    </LinearLayout>
+<!--    <RelativeLayout-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="wrap_content">-->
+
+<!--        <Button-->
+<!--        android:id="@+id/btnFacebook"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:backgroundTint="@color/facebookBlue"-->
+<!--        android:drawableLeft="@drawable/ic_facebook"-->
+<!--        android:text="Facebook"-->
+<!--        android:textColor="@color/white" />-->
+<!--    </RelativeLayout>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnGoogle"-->
+<!--        android:layout_width="185dp"-->
+<!--        android:layout_height="149dp"-->
+<!--        android:backgroundTint="@color/"-->
+<!--        android:drawableLeft="@drawable/google_logo"-->
+<!--        android:text="Google"-->
+<!--        android:textColor="@color/white" />>>-->
+
+</LinearLayout>

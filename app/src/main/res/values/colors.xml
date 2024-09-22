@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+
     <color name="white">#FFFFFFFF</color>
     <color name="navyblue">#125488</color>
-    <color name="royalblue">#2A93D5</color>
     <color name="policestrobe">#37CAEC</color>
     <color name="turqoise">#3DD9D6</color>
     <color name="skyblue">#ADD9D8</color>
+
+        <color name="lightBlue">#E3F2FD</color>
+        <color name="mediumBlue">#64B5F6</color>
+        <color name="darkBlue">#1565C0</color>
+
+            <color name="royalblue">#2A93D5</color>
+    <color name="black">#FF000000</color>
+    <color name="purple">#8692f7</color>
+
+
 </resources>
