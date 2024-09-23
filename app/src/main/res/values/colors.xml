@@ -16,4 +16,14 @@
     <color name="purple">#8692f7</color>
 
 
+        <color name="secondary">#4169E1</color>
+    <color name="primary">#1E90FF</color>  <!-- Custom dark theme color -->
+    <color name="primaryDark">#141414</color>
+    <color name="accent">#4169E1</color>
+    <color name="background">#000000</color> <!-- Dark background -->
+    <color name="textColor">#FFFFFF</color> <!-- Light text on dark background -->
+
+
+
+
 </resources>

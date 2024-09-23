@@ -71,10 +71,7 @@
         android:backgroundTint="@color/purple"
         android:textColor="@color/white"/>
 
-    <!-- Already have an account? -->
 
-
-    <!-- Or connect using -->
     <TextView
         android:id="@+id/orConnect"
         android:layout_width="wrap_content"
@@ -83,42 +80,43 @@
         android:textSize="14sp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="32dp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"/>
 
-    <!-- Social Media Login Buttons -->
+
     <LinearLayout
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="30dp"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="16dp">
+        android:layout_marginLeft="60dp"
+       >
 
-        <!-- Facebook Button -->
+        <ImageView
+            android:id="@+id/ic_Google"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/ic_google" />
+        <ImageView
+            android:id="@+id/ic_twitter"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/ic_facebook" />
 
-        <!-- Google Button -->
+        <ImageView
+            android:id="@+id/ic_Facebook"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:src="@drawable/ic_twitter" />
+
+
     </LinearLayout>
-<!--    <RelativeLayout-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_width="wrap_content">-->
 
-<!--        <Button-->
-<!--        android:id="@+id/btnFacebook"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginEnd="16dp"-->
-<!--        android:backgroundTint="@color/facebookBlue"-->
-<!--        android:drawableLeft="@drawable/ic_facebook"-->
-<!--        android:text="Facebook"-->
-<!--        android:textColor="@color/white" />-->
-<!--    </RelativeLayout>-->
 
-<!--    <Button-->
-<!--        android:id="@+id/btnGoogle"-->
-<!--        android:layout_width="185dp"-->
-<!--        android:layout_height="149dp"-->
-<!--        android:backgroundTint="@color/"-->
-<!--        android:drawableLeft="@drawable/google_logo"-->
-<!--        android:text="Google"-->
-<!--        android:textColor="@color/white" />>>-->
+
 
 </LinearLayout>

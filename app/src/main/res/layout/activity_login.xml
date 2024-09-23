@@ -8,7 +8,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/loginbkg"
+    android:background="@drawable/gradient_bg"
+
+   
     tools:context=".LoginActivity">
 
     <androidx.cardview.widget.CardView
@@ -17,7 +19,8 @@
         android:layout_margin="30dp"
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp"
-        android:background="@drawable/custom_edittext">
+        android:background="@drawable/custom_edittext"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
