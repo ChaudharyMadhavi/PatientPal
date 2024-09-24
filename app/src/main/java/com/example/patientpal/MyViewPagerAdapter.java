@@ -1,4 +1,5 @@
 package com.example.patientpal;
+import com.example.patientpal.fragments.HomeFragment;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
