@@ -25,13 +25,46 @@ public class OrthoPedicCareActivity extends AppCompatActivity {
         Transportation=findViewById(R.id.card_transportation);
         SpecializedCare=findViewById(R.id.card_specialized_care);
 
-        Household.setOnClickListener(new View.OnClickListener{
+        Household.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCreate(View v){
-                  Intent intent= new Intent(getActivity(),);
+            public void onClick(View v) {
+                   Intent intent = new Intent(OrthoPedicCareActivity.this, Bill_PaymentActivitiy.class);
+                    startActivity(intent);
             }
         });
-   }
+        PersonalCare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(OrthoPedicCareActivity.this, Bill_PaymentActivitiy.class);
+                startActivity(intent);
+            }
+        });
+        Companionship.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(OrthoPedicCareActivity.this, Bill_PaymentActivitiy.class);
+                startActivity(intent);
+            }
+        });
+        Transportation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(OrthoPedicCareActivity.this, Bill_PaymentActivitiy.class);
+                startActivity(intent);
+            }
+        });
+        SpecializedCare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(OrthoPedicCareActivity.this, Bill_PaymentActivitiy.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+    }
 
 
 
