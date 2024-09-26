@@ -23,9 +23,9 @@ public class MyViewPagerAdapter extends FragmentStateAdapter {
             case 0:
                 return new HomeFragment();
             case 1:
-                return new AboutUsFragment();
-            case 2:
                 return new ServiceFragment();
+            case 2:
+                return new AboutUsFragment();
             default:
                 return new HomeFragment();
         }

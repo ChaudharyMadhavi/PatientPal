@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class WelcomeActivity extends AppCompatActivity {
     Button signin,signup;
+    DBHelper DB;
     Intent i;
     @Override
     protected void onCreate(Bundle SavedInstantState){
@@ -19,6 +20,8 @@ public class WelcomeActivity extends AppCompatActivity {
 
         signin=(Button) findViewById(R.id.btnSignIn);
         signup=(Button)findViewById(R.id.btnSignUp);
+
+
 
         signup.setOnClickListener(new View.OnClickListener() {
 
