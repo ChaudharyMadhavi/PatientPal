@@ -1,4 +1,4 @@
-package com.example.patientpal.fragments;
+package com.example.patientpal;
 
 public class photo {
     private int resourceid;

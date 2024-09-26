@@ -1,4 +1,4 @@
-package com.example.patientpal.fragments;
+package com.example.patientpal;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,8 +7,6 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.patientpal.R;
 
 import java.util.List;
 

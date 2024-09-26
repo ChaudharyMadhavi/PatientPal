@@ -9,8 +9,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBHelper extends SQLiteOpenHelper {
     public static final String DBNAME = "Login1.db";
+    public static final String DB2="Time";
     public DBHelper(Context context) {
         super(context, "Login1.db", null, 1);
+        
     }
 
     @Override
@@ -52,4 +54,9 @@ public class DBHelper extends SQLiteOpenHelper {
         else
             return false;
     }
+
+
+
+
+
 }

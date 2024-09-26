@@ -18,7 +18,7 @@
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/card_fracture"
+        app:layout_constraintBottom_toTopOf="@id/card_tumer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_weight="1">
@@ -35,7 +35,7 @@
 
     <!-- Fracture Care Card -->
     <androidx.cardview.widget.CardView
-        android:id="@+id/card_fracture"
+        android:id="@+id/card_tumer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -44,7 +44,7 @@
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintTop_toBottomOf="@id/card_orthopedic"
-        app:layout_constraintBottom_toTopOf="@id/card_cold"
+        app:layout_constraintBottom_toTopOf="@id/card_cencer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_weight="1">
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:text="Fracture Care"
+            android:text="TumerCare"
             android:textAlignment="center"
             android:textSize="18sp"
             android:textColor="@android:color/black" />
@@ -61,7 +61,7 @@
 
     <!-- Cold Care Card -->
     <androidx.cardview.widget.CardView
-        android:id="@+id/card_cold"
+        android:id="@+id/card_cencer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -69,7 +69,7 @@
         app:cardCornerRadius="8dp"
         android:clickable="true"
         android:focusable="true"
-        app:layout_constraintTop_toBottomOf="@id/card_fracture"
+        app:layout_constraintTop_toBottomOf="@id/card_tumer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
