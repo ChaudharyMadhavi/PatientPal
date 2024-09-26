@@ -1,11 +1,11 @@
-package com.example.patientpal.fragments;
+package com.example.patientpal;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.patientpal.R;
 
-class OrthoPedicCareActivity extends AppCompatActivity {
+public class OrthoPedicCareActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

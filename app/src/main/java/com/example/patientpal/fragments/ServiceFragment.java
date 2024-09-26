@@ -1,5 +1,4 @@
 package com.example.patientpal.fragments;
-import com.example.patientpal.fragments.OrthoPedicCareActivity;
 
 
 import android.content.Intent;
@@ -9,6 +8,8 @@ import androidx.cardview.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.patientpal.OrthoPedicCareActivity;
 import com.example.patientpal.R;
 
 
@@ -31,7 +32,7 @@ public class ServiceFragment extends Fragment {
             public void onClick(View v) {
                 // Open the OrthopedicCareActivity when the card is clicked
                 if (getActivity() != null) {
-                    Intent intent = new Intent(getActivity(),OrthoPedicCareActivity.class);
+                    Intent intent = new Intent(getActivity(), OrthoPedicCareActivity.class);
                     startActivity(intent);
                 }
             }
