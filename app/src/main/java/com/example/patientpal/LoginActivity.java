@@ -12,6 +12,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText username, password;
     Button btnlogin;
     DBHelper DB;
+    TimeDB tdb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,12 @@ public class LoginActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.password1);
         btnlogin = (Button) findViewById(R.id.btnsignin1);
         DB = new DBHelper(this);
+        tdb=new TimeDB(this);
+        tdb.insertData(1,"HouseHold Task",1200);
+        tdb.insertData(2,"Personal Care",1700);
+        tdb.insertData(3,"CompanionShip",1000);
+        tdb.insertData(4,"Transportation",2000);
+        tdb.insertData(5,"Specialized Care",3000);
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.cardview.widget.CardView;
+
+import android.text.format.Time;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,7 @@ import android.view.ViewGroup;
 import com.example.patientpal.CencerCareAvtivity;
 import com.example.patientpal.OrthoPedicCareActivity;
 import com.example.patientpal.R;
+import com.example.patientpal.TimeDB;
 import com.example.patientpal.TumerCareActivity;
 
 
@@ -34,6 +37,7 @@ public class ServiceFragment extends Fragment {
         cardOrthopedicCare = view.findViewById(R.id.card_orthopedic);
         cardTumerCare= view.findViewById(R.id.card_tumer);
         cardCencerCare= view.findViewById(R.id.card_cencer);
+
 
         // Set a click listener for the CardView
         cardOrthopedicCare.setOnClickListener(new View.OnClickListener() {
