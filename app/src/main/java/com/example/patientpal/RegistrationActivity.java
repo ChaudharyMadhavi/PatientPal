@@ -11,6 +11,7 @@ public class RegistrationActivity extends AppCompatActivity{
     EditText username, password, repassword,address;
     Button signup, signin;
     DBHelper DB;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

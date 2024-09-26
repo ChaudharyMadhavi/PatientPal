@@ -4,58 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Bill_PaymentActivity">
+    tools:context=".CareDurationActivity">
 
-    <!-- Question to the user -->
+    <!-- TextView asking the user a question -->
     <TextView
-        android:id="@+id/textViewQuestion"
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_question"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="For how much time do you need the care?"
+        android:text="For how much time do you need our care?"
         android:textSize="18sp"
-        android:layout_marginTop="32dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"/>
 
-    <!-- EditText for the user to enter the time duration -->
+    <!-- Input for duration of care -->
     <EditText
-        android:id="@+id/editTextDuration"
+        android:id="@+id/et_duration"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Enter hours"
+        android:hint="Enter duration (hours)"
         android:inputType="number"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/textViewQuestion"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_question"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:padding="16dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp" />
+        android:layout_marginHorizontal="16dp"/>
 
-    <!-- Card for payment details -->
+    <!-- Card for bill details -->
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewPayment"
+        android:id="@+id/card_bill"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
         app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@id/editTextDuration"
+        app:layout_constraintTop_toBottomOf="@id/et_duration"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="16dp">
 
-        <!-- TextView for showing payment amount -->
-        <TextView
-            android:id="@+id/textViewPaymentAmount"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="You need to pay: "
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textColor="@android:color/black" />
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Your Bill -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Bill"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Username -->
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Task name -->
+            <TextView
+                android:id="@+id/tv_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task: "
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Task amount -->
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount: "
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

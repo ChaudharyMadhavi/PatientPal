@@ -5,11 +5,10 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.sql.Time;
-
 
 public class Bill_PaymentActivitiy extends AppCompatActivity {
     TimeDB tdb;
+    DBHelper db;
     EditText e;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
