@@ -102,7 +102,8 @@
                 android:layout_weight="1"
                 android:layout_margin="8dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="12dp">
+                app:cardCornerRadius="12dp"
+                android:backgroundTint="#FFB5C0">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -111,13 +112,12 @@
                     android:orientation="vertical"
                     android:padding="12dp">
 
+
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:layout_weight="1"
-                        android:elevation="6dp"
-                        app:cardCornerRadius="12dp" />
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/home_2"
+                        android:contentDescription="Flexible Schedule" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -136,7 +136,8 @@
                 android:layout_weight="1"
                 android:layout_margin="8dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="12dp">
+                app:cardCornerRadius="12dp"
+                android:backgroundTint="#FFB5C0">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -148,7 +149,7 @@
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-
+                        android:src="@drawable/home_1"
                         android:contentDescription="Flexible Schedule" />
 
                     <TextView
@@ -168,7 +169,8 @@
                 android:layout_weight="1"
                 android:layout_margin="8dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="12dp">
+                app:cardCornerRadius="12dp"
+                android:backgroundTint="#FFB5C0">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -177,11 +179,12 @@
                     android:gravity="center"
                     android:padding="12dp">
 
+
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-
-                        android:contentDescription="Secure Booking" />
+                        android:src="@drawable/home_3"
+                        android:contentDescription="Flexible Schedule" />
 
                     <TextView
                         android:layout_width="wrap_content"
