@@ -25,11 +25,7 @@ public class RegistrationActivity extends AppCompatActivity{
         signup = (Button) findViewById(R.id.btnsignup);
         signin = (Button) findViewById(R.id.btnsignin);
         DB = new DBHelper(this);
-        tdb.insertData(1, "Household Task", 1200);
-        tdb.insertData(2, "Personal Care", 1700);
-        tdb.insertData(3, "Companionship", 1000);
-        tdb.insertData(4, "Transportation", 2000);
-        tdb.insertData(5, "Specialized Care", 3000);
+
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override

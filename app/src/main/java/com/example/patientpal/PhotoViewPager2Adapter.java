@@ -13,8 +13,6 @@ import java.util.List;
 public class PhotoViewPager2Adapter extends RecyclerView.Adapter<PhotoViewPager2Adapter.PhotoViewHolder>{
     private List<photo> mListPhoto;
 
-
-
     public PhotoViewPager2Adapter(List<photo> mListPhoto){
         this.mListPhoto=mListPhoto;
     }

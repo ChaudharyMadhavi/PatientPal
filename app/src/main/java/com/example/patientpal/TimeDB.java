@@ -50,5 +50,4 @@ public class TimeDB extends SQLiteOpenHelper {
         return db.rawQuery("SELECT * FROM tasks", null);
     }
 
-
 }
