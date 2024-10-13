@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,9 +28,11 @@ public class HomeFragment extends Fragment {
     private Handler mHandler = new Handler();
     private Runnable mRunnable;
 
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Nullable
@@ -44,6 +47,7 @@ public class HomeFragment extends Fragment {
         PhotoViewPager2Adapter adapter = new PhotoViewPager2Adapter(mListPhoto);
         mviewpager2.setAdapter(adapter);
         mCircleIndecator3.setViewPager(mviewpager2);
+
 
         autoSlideImages(); // Start auto-sliding
 

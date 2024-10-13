@@ -61,7 +61,7 @@ android:layout_height="match_parent">
             android:id="@+id/tab_about_us"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@drawable/aboutus_icon" />
+            android:icon="@drawable/about_us_icon" />
 
 
     </com.google.android.material.tabs.TabLayout>
