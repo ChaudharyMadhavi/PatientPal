@@ -5,44 +5,50 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 public class TimeDB extends SQLiteOpenHelper {
-    public static final String DATABASE_NAME = "TimeDB.db";
-    public static final String TABLE_NAME = "tasks";
-    public static final String COL_1 = "ID";
-    public static final String COL_2 = "TASK_NAME";
-    public static final String COL_3 = "AMOUNT";
+
+    public static final String DBNAME = "TimeDB.db";
 
     public TimeDB(Context context) {
-        super(context, DATABASE_NAME, null, 1);
+        super(context, DBNAME, null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        // Creating the tasks table
-        db.execSQL("create table " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, TASK_NAME TEXT, AMOUNT INTEGER)");
+        db.execSQL("CREATE TABLE tasks(id INTEGER PRIMARY KEY AUTOINCREMENT, taskName TEXT, amount INTEGER)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXISTS tasks");
         onCreate(db);
     }
 
-    // Method to insert task data
-    public boolean insertData(int id, String taskName, int amount) {
+    // Method to insert data into the database
+    public Boolean insertData(int id, String taskName, int amount) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(COL_1, id);
-        contentValues.put(COL_2, taskName);
-        contentValues.put(COL_3, amount);
-        long result = db.insert(TABLE_NAME, null, contentValues);
-        return result != -1;
+        contentValues.put("id", id);
+        contentValues.put("taskName", taskName);
+        contentValues.put("amount", amount);
+
+        long result = db.insert("tasks", null, contentValues);
+        if (result == -1) {
+            Log.e("Database", "Insert failed for task: " + taskName);
+            return false; // if insertion fails
+        }
+        Log.d("Database", "Insert successful for task: " + taskName);
+        return true; // insertion successful
+    // if insertion fails, result will be -1
     }
 
-    // Method to retrieve all tasks and their amounts
+    // Method to retrieve all data
     public Cursor getAllData() {
-        SQLiteDatabase db = this.getReadableDatabase(); // Use getReadableDatabase() for reading data
-        return db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
+        SQLiteDatabase db = this.getReadableDatabase();
+        return db.rawQuery("SELECT * FROM tasks", null);
     }
+
+
 }

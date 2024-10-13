@@ -12,20 +12,13 @@ public class Bill_PaymentActivity extends AppCompatActivity {
     TextView taskListTextView, totalAmountTextView, usernameTextView;
     int totalAmount = 0;
 
-
-
-
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bill_payment);
 
-        tdb.insertData(1, "Household Task", 1200);
-        tdb.insertData(2, "Personal Care", 1700);
-        tdb.insertData(3, "Companionship", 1000);
-        tdb.insertData(4, "Transportation", 2000);
-        tdb.insertData(5, "Specialized Care", 3000);
+
 
         // Get username from Intent
         Intent intent = getIntent();
