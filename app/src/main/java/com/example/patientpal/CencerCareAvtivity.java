@@ -28,35 +28,35 @@ public class CencerCareAvtivity extends AppCompatActivity {
         Household.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CencerCareAvtivity.this, Bill_PaymentActivitiy.class);
+                Intent intent = new Intent(CencerCareAvtivity.this, Bill_PaymentActivity.class);
                 startActivity(intent);
             }
         });
         PersonalCare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CencerCareAvtivity.this, Bill_PaymentActivitiy.class);
+                Intent intent = new Intent(CencerCareAvtivity.this, Bill_PaymentActivity.class);
                 startActivity(intent);
             }
         });
         Companionship.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CencerCareAvtivity.this, Bill_PaymentActivitiy.class);
+                Intent intent = new Intent(CencerCareAvtivity.this, Bill_PaymentActivity.class);
                 startActivity(intent);
             }
         });
         Transportation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CencerCareAvtivity.this, Bill_PaymentActivitiy.class);
+                Intent intent = new Intent(CencerCareAvtivity.this, Bill_PaymentActivity.class);
                 startActivity(intent);
             }
         });
         SpecializedCare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CencerCareAvtivity.this, Bill_PaymentActivitiy.class);
+                Intent intent = new Intent(CencerCareAvtivity.this, Bill_PaymentActivity.class);
                 startActivity(intent);
             }
         });

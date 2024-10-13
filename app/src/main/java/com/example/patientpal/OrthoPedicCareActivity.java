@@ -63,7 +63,7 @@ public class OrthoPedicCareActivity extends AppCompatActivity {
     }
 
     private void navigateToBillPayment(String taskName) {
-        Intent intent = new Intent(OrthoPedicCareActivity.this, Bill_PaymentActivitiy.class);
+        Intent intent = new Intent(OrthoPedicCareActivity.this,Bill_PaymentActivity.class);
         intent.putExtra("TASK_NAME", taskName);  // Pass the name of the clicked card button
         startActivity(intent);
     }

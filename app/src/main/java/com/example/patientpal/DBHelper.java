@@ -12,7 +12,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public DBHelper(Context context) {
         super(context, "Login1.db", null, 1);
-        
+
     }
 
     @Override
@@ -54,6 +54,8 @@ public class DBHelper extends SQLiteOpenHelper {
         else
             return false;
     }
+
+
 
 
 
